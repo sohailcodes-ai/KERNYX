@@ -51,6 +51,28 @@ CLI:
 A program with type errors never begins execution. Diagnostics carry stable error
 codes (`KX0001`-style), file/line/column, source excerpts, and hints.
 
+## Capability matrix
+
+| Capability | State | Notes |
+|---|---|---|
+| Lexing / parsing | IMPLEMENTED AND VERIFIED | 0.1 |
+| Static type checking | IMPLEMENTED AND VERIFIED | 0.1 |
+| Interpretation / execution | IMPLEMENTED AND VERIFIED | 0.1 |
+| Diagnostics with source locations | IMPLEMENTED AND VERIFIED | 0.1 |
+| CLI (run/check/version/help) | IMPLEMENTED AND VERIFIED | 0.1 |
+| Native compilation | PLANNED / NOT IMPLEMENTED | milestone 0.4 |
+| Memory-safety model | PLANNED / NOT IMPLEMENTED | milestone 0.3; undecided |
+| Effects / capabilities | PLANNED / NOT IMPLEMENTED | milestone 0.5 |
+| Concurrency | PLANNED / NOT IMPLEMENTED | milestone 0.6 |
+| WebAssembly / browser | PLANNED / NOT IMPLEMENTED | milestone 0.7 |
+| Networking / HTTP / databases | PLANNED / NOT IMPLEMENTED | milestone 0.8 |
+| Package / formatter / language server | PLANNED / NOT IMPLEMENTED | milestone 0.9+ |
+
+States:
+- IMPLEMENTED AND VERIFIED — present and tested in this release.
+- PARTIALLY IMPLEMENTED / EXPERIMENTAL — none in 0.1.
+- PLANNED / NOT IMPLEMENTED — documented in docs/ROADMAP.md, not built.
+
 ## What does not work yet
 
 - Async / concurrency (`flow` is proposed syntax only).
