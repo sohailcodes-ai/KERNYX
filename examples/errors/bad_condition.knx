@@ -1,0 +1,4 @@
+fn main() -> Unit {
+    when 42 {
+    }
+}

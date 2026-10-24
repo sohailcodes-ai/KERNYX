@@ -1,0 +1,7 @@
+fn add(a: Int, b: Int) -> Int {
+    give a + b
+}
+
+fn main() -> Unit {
+    add(1)
+}

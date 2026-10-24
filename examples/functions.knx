@@ -1,0 +1,14 @@
+app "functions"
+
+fn double(x: Int) -> Int {
+    give x * 2
+}
+
+fn add(a: Int, b: Int) -> Int {
+    give a + b
+}
+
+fn main() -> Unit {
+    let result = double(add(3, 4))
+    print(result)
+}

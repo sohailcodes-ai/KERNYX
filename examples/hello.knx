@@ -1,0 +1,15 @@
+app "hello"
+
+fn greet(name: Text) -> Text {
+    give "yo, " + name
+}
+
+fn main() {
+    let user = greet("world")
+
+    when user != "" {
+        print(user)
+    } otherwise {
+        print("nah, nothing here")
+    }
+}

@@ -1,0 +1,19 @@
+[package]
+name = "kernyx"
+version = "0.1.0"
+edition = "2021"
+description = "KERNYX: a general-purpose programming language, first milestone interpreter-backed typed frontend."
+authors = ["KERNYX project"]
+repository = ""
+
+[dependencies]
+
+[[bin]]
+name = "kernyx"
+path = "src/main.rs"
+
+[profile.dev]
+opt-level = 1
+
+[profile.release]
+opt-level = 2
